@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('home');
 });
 
@@ -10,8 +10,8 @@ Route::get('/about', function () {
     return view('about', ['nama' => 'Fatur']);
 });
 
-Route::get('/article', function () {
-    return view('article');
+Route::get('/blog', function () {
+    return view('blog');
 });
 
 Route::get('/contact', function () {
